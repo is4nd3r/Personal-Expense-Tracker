@@ -1,6 +1,6 @@
 from date import Date
 
-def depense_valide(type_d,date,montant):
+def depense_valide(date,type_d,montant):
 
     dates={ 1:31 , 2:28 , 3:31 , 4:30 , 5:31 , 6:30 , 7:31 , 8:31 , 9:30 , 10:31 , 11:30 , 12:31 }
     if date.mois not in dates.keys() or not (1 <= date.jour <= dates[date.mois]):
